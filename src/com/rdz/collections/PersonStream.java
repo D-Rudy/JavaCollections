@@ -30,7 +30,7 @@ public class PersonStream {
 	System.out.println("Nombre de personne de moins de 30 ans: " + numUnder30);
 	
 	System.out.println("Homme:");
-	
+	//Classe interne anonyme
 	collection.stream()
 		.filter(person -> person.getGender() == Person.Gender.MALE)
 		.forEach(new Consumer<Person>() {
@@ -43,6 +43,7 @@ public class PersonStream {
 	
 	System.out.println("\n\nFemme:");
 	
+	//fonction lambda
 	collection.stream()
 		.filter(person -> person.getGender() == Person.Gender.FEMALE)
 		.forEach( person -> System.out.println(person) );
