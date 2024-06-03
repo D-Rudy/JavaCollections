@@ -36,21 +36,20 @@ public class StreamPredicates {
 		});
 
 		System.out.println("Tous les nombres sont > 0?: " + greaterThan0);
-		
-		boolean anyLessThan0 = collection.stream()
-				.anyMatch(e -> e < 0); //fontion lambda qui tiens lieu de prédicat appliqué à tous les éléments du stream
+
+		boolean anyLessThan0 = collection.stream().anyMatch(e -> e < 0); // fontion lambda qui tiens lieu de prédicat
+																			// appliqué à tous les éléments du stream
 		System.out.println("Il y a un nombre < 0?: " + anyLessThan0);
-		
-		boolean anyGreaterThan100 = collection.stream()
-				.anyMatch(e -> e >100);
+
+		boolean anyGreaterThan100 = collection.stream().anyMatch(e -> e > 100);
 		System.out.println("Il y a un nombre > 100 ?: " + anyGreaterThan100);
-		
-		boolean noneLessThan0 = collection.stream()
-				.noneMatch(e -> e < 0);
+
+		boolean noneLessThan0 = collection.stream().noneMatch(e -> e < 0);
 		System.out.println("Il y a aucun nombre < 0 ?: " + noneLessThan0);
-		
-		boolean noneGreaterThan30 = collection.stream()
-				.noneMatch(e -> e > 30);
+
+		boolean noneGreaterThan30 = collection.stream().noneMatch(e -> e > 30);
 		System.out.println("Il n'y a aucun nombre > 30? : " + noneGreaterThan30);
+
 	}
+
 }
