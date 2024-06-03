@@ -50,7 +50,7 @@ public class MappingAPredicate {
 		
 		System.out.println("\n\nAge: \n");
 		collection.stream()	
-			.mapToInt(p -> p.getAge())
+			.mapToInt(p -> p.getAge())//mapToLong - mapToDouble
 			.forEach(s -> System.out.println(s));
 	}
 }
