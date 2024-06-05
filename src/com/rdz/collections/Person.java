@@ -37,7 +37,7 @@ public class Person {
 
 	@Override
 	public String toString() {
-		return "\nname: " + name + ", \ngender: " + gender + ", \nage: " + age + ", \ncity: " + city + "\n\n----------------";
+		return "\nname: " + name + ", gender: " + gender + ", age: " + age + ", city: " + city;
 	}
 
 	
